@@ -1,29 +1,23 @@
 {
-  "name": "require-lint",
+  "name": "@devco/require-lint",
   "version": "2.0.3",
-  "description": "Verify that require statements match your package.json",
-  "author": "Tabcorp",
-  "license": "MIT",
-  "keywords": [
-    "require",
-    "package",
-    "dependencies",
-    "lint",
-    "check"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Tabcorp/require-lint.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Tabcorp/require-lint/issues"
-  },
+  "description": "Verify require statements match package.json",
   "main": "lib/index.js",
   "bin": {
     "require-lint": "./bin/cmd.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devco/require-lint.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "test": "mocha"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.12.7",
+    "mocha": "^8.0.1",
+    "should": "^13.2.3"
   },
   "dependencies": {
     "builtins": "^4.0.0",
@@ -31,10 +25,5 @@
     "glob": "^7.0.0",
     "lodash": "^4.5.1",
     "rc": "^1.2.1"
-  },
-  "devDependencies": {
-    "coffee-script": "~1.12.7",
-    "mocha": "^8.0.1",
-    "should": "^13.2.3"
   }
 }
