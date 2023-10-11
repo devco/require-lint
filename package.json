@@ -4,7 +4,7 @@
   "description": "Verify require statements match package.json",
   "main": "lib/index.js",
   "bin": {
-    "require-lint": "./bin/cmd.js"
+    "require-lint": "bin/cmd.js"
   },
   "repository": {
     "type": "git",
