@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-var util     = require('util');
 var path     = require('path');
 var rc       = require('rc');
 var index    = require('../lib/index');
 
 function list(arg) {
-  if (util.isArray(arg)) return arg;
+  if (Array.isArray(arg)) return arg;
   else if (typeof arg === 'string') return arg.split(',');
   else return [];
 }
