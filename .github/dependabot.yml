@@ -1,8 +1,7 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    timezone: Australia/Sydney
-  open-pull-requests-limit: 10
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    target-branch: 'dev'
