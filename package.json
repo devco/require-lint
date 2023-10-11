@@ -20,10 +20,10 @@
     "should": "^13.2.3"
   },
   "dependencies": {
-    "builtins": "^4.0.0",
-    "detective": "^5.1.0",
-    "glob": "^7.0.0",
-    "lodash": "^4.5.1",
-    "rc": "^1.2.1"
+    "builtins": "^5.0.1",
+    "detective": "^5.2.1",
+    "glob": "^10.3.10",
+    "lodash": "^4.17.21",
+    "rc": "^1.2.8"
   }
 }
