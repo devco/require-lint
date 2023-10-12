@@ -1,0 +1,46 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    container: public.ecr.aws/m2m7p8q6/ultracommerce/github-actions/nvm:latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install node from .nvmrc
+        run: |
+          echo "nvm v$(nvm --version)"
+          if [ -f .nvmrc ]
+          then
+            nvm install $(< .nvmrc)
+            echo "node $(node --version)"
+            nvm install-latest-npm
+            echo "npm v$(npm --version)"
+          else
+            echo ".nvmrc not found"
+            exit 1
+          fi
+      - name: Install dependencies
+        run: |
+          npm ci
+      - name: Run tests
+        run: |
+          npm test
+      - name: Publish to npm registry
+        env:
+          NPM_TOKEN: ${{ secrets.ACTIONS_NPM_TOKEN_RW }}
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          npm run publish

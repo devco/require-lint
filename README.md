@@ -1,6 +1,6 @@
 # require-lint
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![CI](https://github.com/devco/require-lint/actions/workflows/ci.yml/badge.svg)](https://github.com/devco/require-lint/actions/workflows/ci.yml)
 
 Parses your code for `require` statements, and checks that:
 
