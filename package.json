@@ -14,10 +14,12 @@
   "scripts": {
     "coverage": "nyc mocha",
     "lint": "standard --fix",
+    "publish": "clean-publish",
     "test": "mocha",
     "watch-test": "mocha --watch"
   },
   "devDependencies": {
+    "clean-publish": "^4.2.0",
     "coffee-script": "~1.12.7",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
