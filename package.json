@@ -1,6 +1,6 @@
 {
   "name": "@devco/require-lint",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Verify require statements match package.json",
   "main": "lib/index.js",
   "bin": {
