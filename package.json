@@ -12,11 +12,14 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "test": "mocha"
+    "coverage": "nyc mocha",
+    "test": "mocha",
+    "watch-test": "mocha --watch"
   },
   "devDependencies": {
     "coffee-script": "~1.12.7",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "should": "^13.2.3"
   },
   "dependencies": {
