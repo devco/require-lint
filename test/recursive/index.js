@@ -1,8 +1,8 @@
 // require core module
-require('path');
+require('path')
 
 // require missing dependency
-require('lodash');
+require('lodash')
 
 // require relative module
-require('./lib');
+require('./lib')

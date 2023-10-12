@@ -1,5 +1,5 @@
 // core module
-require('fs');
+require('fs')
 
 // valid dependency
-require('lodash');
+require('lodash')

@@ -1,5 +1,5 @@
 // core module
-require('path');
+require('path')
 
 // missing dependency
-require('lodash');
+require('lodash')

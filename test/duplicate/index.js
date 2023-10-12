@@ -1,8 +1,8 @@
 // require core module
-require('path');
+require('path')
 
 // missing dependency
-require('express');
+require('express')
 
 // require relative module
-require('./lib');
+require('./lib')
