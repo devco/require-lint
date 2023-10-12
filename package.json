@@ -13,6 +13,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "coverage": "nyc mocha",
+    "lint": "standard --fix",
     "test": "mocha",
     "watch-test": "mocha --watch"
   },
@@ -29,5 +30,18 @@
     "glob": "^10.3.10",
     "lodash": "^4.17.21",
     "rc": "^1.2.8"
+  },
+  "standard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "test/**/*"
+    ]
   }
 }
