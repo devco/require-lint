@@ -1,6 +1,6 @@
 # require-lint
 
-
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Parses your code for `require` statements, and checks that:
 
