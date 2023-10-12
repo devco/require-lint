@@ -105,10 +105,10 @@ describe('require lint', function () {
   })
 
   describe('extra requires', function () {
-    it('can process coffee-script source', function (done) {
+    it('can process coffeescript source', function (done) {
       test([
         '--pkg ' + __dirname + '/coffee/package.json',
-        '--require coffee-script/register'
+        '--require coffeescript/register'
       ], function (exitCode, stdout, stderr) {
         exitCode.should.be.above(0)
         stderr.should.containEql('Missing dependencies: ms, express')
@@ -133,7 +133,7 @@ describe('require lint', function () {
     it('can print CoffeeScript syntax error locations', function (done) {
       test([
         '--pkg ' + __dirname + '/bad-syntax/package.json',
-        '--require coffee-script/register',
+        '--require coffeescript/register',
         '--src ' + 'index.coffee'
       ], function (exitCode, stdout, stderr) {
         exitCode.should.be.above(0)

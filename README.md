@@ -67,7 +67,7 @@ Any file to be required before processing, for example to load extra compilers l
 These must be absolute paths or available modules.
 
 ```bash
-require-lint --require coffee-script/register
+require-lint --require coffeescript/register
 ```
 
 - `--ignore-missing`
@@ -80,16 +80,16 @@ require-lint --ignore-missing newrelic
 
 - `--ignore-extra`
 
-Modules that should not be considered extraneous, even if they are not `required`. For example you might have a dependency on `coffee-script`, but not explicitly `require` it.
+Modules that should not be considered extraneous, even if they are not `required`. For example you might have a dependency on `coffeescript`, but not explicitly `require` it.
 
 ```bash
-require-lint --ignore-extra coffee-script
+require-lint --ignore-extra coffeescript
 ```
 
 If you would like to use `--ignore-extra` with multiple dependencies, you can separate them using commas:
 
 ```bash
-require-lint --ignore-extra coffee-script,bootstrap,ejs
+require-lint --ignore-extra coffeescript,bootstrap,ejs
 ```
 
 ## Static configuration
@@ -97,7 +97,7 @@ require-lint --ignore-extra coffee-script,bootstrap,ejs
 All options above can also be saved in a `.requirelintrc` file at the root of your project. For example:
 
 ```text
-require=coffee-script/register
+require=coffeescript/register
 ignore-missing=newrelic
 ```
 
@@ -106,7 +106,7 @@ This makes it easier to check-in your configuration to source-control, although 
 ```json
 {
   "scripts": {
-    "lint": "require-lint --require=coffee-script/register"
+    "lint": "require-lint --require=coffeescript/register"
   }
 }
 ```

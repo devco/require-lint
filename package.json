@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "clean-publish": "^4.2.0",
-    "coffee-script": "~1.12.7",
+    "coffeescript": "^2.7.0",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "should": "^13.2.3",
@@ -29,7 +29,7 @@
   "dependencies": {
     "builtins": "^5.0.1",
     "detective": "^5.2.1",
-    "glob": "^10.3.10",
+    "fast-glob": "^3.3.1",
     "lodash": "^4.17.21",
     "rc": "^1.2.8"
   },
