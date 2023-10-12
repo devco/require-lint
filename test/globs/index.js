@@ -1,1 +1,1 @@
-require('big.js');
+require('big.js')

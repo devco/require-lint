@@ -1,0 +1,10 @@
+{
+  "all": true,
+  "check-coverage": true,
+  "include": ["bin/**/*.js", "lib/**/*.js"],
+  "reporter": ["html"],
+  "lines": 100,
+  "statements": 100,
+  "functions": 100,
+  "branches": 80
+}

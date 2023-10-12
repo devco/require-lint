@@ -1,5 +1,5 @@
 // valid dependency
-require('lodash');
+require('lodash')
 
 // missing dependency
-require('missing');
+require('missing')

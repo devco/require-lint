@@ -1,5 +1,5 @@
 // require core module
-require('fs');
+require('fs')
 
 // require missing dependency
-require('lodash');
+require('lodash')

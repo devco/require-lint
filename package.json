@@ -4,7 +4,7 @@
   "description": "Verify require statements match package.json",
   "main": "lib/index.js",
   "bin": {
-    "require-lint": "./bin/cmd.js"
+    "require-lint": "bin/cmd.js"
   },
   "repository": {
     "type": "git",
@@ -12,18 +12,38 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "test": "mocha"
+    "coverage": "nyc mocha",
+    "lint": "standard --fix",
+    "publish": "clean-publish",
+    "test": "mocha",
+    "watch-test": "mocha --watch"
   },
   "devDependencies": {
+    "clean-publish": "^4.2.0",
     "coffee-script": "~1.12.7",
-    "mocha": "^8.0.1",
-    "should": "^13.2.3"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "standard": "^17.1.0"
   },
   "dependencies": {
-    "builtins": "^4.0.0",
-    "detective": "^5.1.0",
-    "glob": "^7.0.0",
-    "lodash": "^4.5.1",
-    "rc": "^1.2.1"
+    "builtins": "^5.0.1",
+    "detective": "^5.2.1",
+    "glob": "^10.3.10",
+    "lodash": "^4.17.21",
+    "rc": "^1.2.8"
+  },
+  "standard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "test/**/*"
+    ]
   }
 }

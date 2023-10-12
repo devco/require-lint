@@ -1,1 +1,1 @@
-require('restify');
+require('restify')

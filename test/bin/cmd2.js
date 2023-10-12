@@ -1,5 +1,5 @@
 // core module
-require('fs');
+require('fs')
 
 // missing dependency
-require('express');
+require('express')

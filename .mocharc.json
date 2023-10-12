@@ -1,0 +1,11 @@
+{
+  "diff": true,
+  "extension": [".spec.js"],
+  "opts": false,
+  "package": "./package.json",
+  "reporter": "spec",
+  "slow": 10000,
+  "timeout": 30000,
+  "watch-files": ["./bin/**/*.js", "./lib/**/*.js", "./test/**/*.js"],
+  "recursive": true
+}
