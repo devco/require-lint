@@ -29,7 +29,7 @@
   "dependencies": {
     "builtins": "^5.0.1",
     "detective": "^5.2.1",
-    "fast-glob": "^3.3.1",
+    "fast-glob": "^3.3.2",
     "lodash": "^4.17.21",
     "rc": "^1.2.8"
   },
